@@ -15,6 +15,8 @@ module.exports = {
         blue: "#31406B",
         blue2:"#2B478B",
         green: '#066A71',
+        green2: '#05494D',
+        blueLight: '#C0FFFF'
 
       },
       textColor: {

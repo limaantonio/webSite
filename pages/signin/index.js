@@ -4,8 +4,7 @@ import Link from 'next/link';
 import "../../styles/main.css";
 
 import Input from '../../components/Input';
-
-const SignUp = () => {
+const Login = () => {
   return (
     <div className="h-auto sm:flex w-full "
     style={{ background: "url(./background.svg) no-repeat center/cover" }}>
@@ -18,17 +17,13 @@ const SignUp = () => {
       </div>
       <div className="flex flex-col  items-center sm:w-1/2 w-full h-screen justify-center  ">
     
-        <form className="flex flex-col items-center  my-10 w-10/12">
-          <Input name={"Nome"}/>
-          <Input name={"E-mail"}/>
-          <Input name={"Endereço"}/>
-          <Input name={"CPF"}/>
-          <Input name={"RG"}/>
-          <Input name={"Telefone"}/>
-          <button className="bg-green w-4/12 text-white rounded-3xl h-10 mt-6 ">Cadastrar</button>
+        <form className="flex flex-col items-center    w-10/12">
+          <Input name={"Usuário"}/>
+          <Input name={"Senha"}/>
+          <button className="bg-green w-4/12 text-white rounded-3xl h-10 mt-6 ">Entrar</button>
           <div className="flex flex-col mt-8">
             <Link className="text-green" href="">Esqueceu a senha?</Link>
-            <Link className="text-green" href="">Crie sua conta</Link>
+            <Link className="text-green" href="/signup">Crie sua conta</Link>
           </div>
           </form>
         </div>
@@ -36,4 +31,4 @@ const SignUp = () => {
   );
 }
 
-export default SignUp;
+export default Login;
