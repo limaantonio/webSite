@@ -20,7 +20,7 @@ const Login = () => {
         <form className="flex flex-col items-center    w-10/12">
           <Input name={"Usuário"}/>
           <Input name={"Senha"}/>
-          <button className="bg-green w-4/12 text-white rounded-3xl h-10 mt-6 ">Entrar</button>
+          <button className="bg-green w-4/12  text-white rounded-3xl h-10 mt-6 ">Entrar</button>
           <div className="flex flex-col mt-8">
             <Link className="text-green" href="">Esqueceu a senha?</Link>
             <Link className="text-green" href="/signup">Crie sua conta</Link>
