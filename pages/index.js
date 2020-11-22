@@ -54,7 +54,7 @@ const Nav = ({fixed}) => {
               <li className="nav-item">
                 <a
                   className=" py-2 flex items-center text-xl leading-snug  text-green2 hover:opacity-75"
-                  href="#"
+                  href="#faqs"
                 >
                  <span className="ml-2">FAQS</span>
                 </a>
@@ -100,20 +100,16 @@ const About = () => {
 const Contact = () => {
   return (
     <div id="contact" className="mt-24 sm:flex flex-row h-screen">
-      <div className="w-1/2 flex flex-col mx-20 ">
+      <div className="w-1/2 sm:flex flex-col mx-8 sm:mx-20 ">
         <h1 className="text-3xl text-green font-bold mb-6">NOSSOS CONTATOS</h1>
         <div className="flex flex-row items-center space-x-2"> 
-          <a href="">
-              <img className="bg-white rounded-full w-10 p-2" src="./mail.svg" alt=""/>
-            
-          </a>
+          <img className="bg-white rounded-full w-10 p-2" src="./mail.svg" alt=""/>
           <span>contato@sisms.com.br</span>
         </div>
-     
       </div>
-      <div className="sm:flex flex-row w-1/2 justify-end mx-20 mt-10 sm:px-32">
+      <div className="sm:flex flex-row mx-8  mt-10 ">
       
-        <form className="sm:flex  flex-col items-center space-y-2">
+        <form className="sm:flex w-full  flex-col items-center space-y-2">
         <h1 className="text-gree text-2xl text-green mb-4">ENTRE EM CONTATO</h1>
           <input className="border-2 border-green p-2 rounded-xl" placeholder="Seu nome *" type="text" name="" id=""/>
           <input className="border-2 border-green p-2 rounded-xl" placeholder="Seu e-mail *" type="text" name="" id=""/>
@@ -123,6 +119,39 @@ const Contact = () => {
         </form>
       </div>
     
+    </div>
+  )
+}
+
+const Faqs = () => {
+  return (
+    <div id="faqs" className="flex flex-col justify-center items-center p-2 space-y-4">
+      <h1 className="text-green text-2xl font-bold">PERGUNTAS E RESPOSTAS</h1>
+      <a href="#" className="bg-white rounded-3xl p-2 sm:w-8/12 w-full flex flex-row justify-center shadow-xs transition-all ">
+        <h1 className="w-11/12">O que é a SISMS?</h1>
+        <div className="">
+          <img className="" src="./plus.svg" alt=""/> 
+        </div>
+      </a>
+      <a href="#" className="bg-white rounded-3xl p-2 sm:w-8/12 w-full flex flex-row justify-center shadow-xs ">
+        <h1 className="w-11/12">O que é a SISMS?</h1>
+        <div className="">
+          <img className="" src="./plus.svg" alt=""/> 
+        </div>
+      </a>
+      <a href="#" className="bg-white rounded-3xl p-2 sm:w-8/12 w-full flex flex-row justify-center shadow-xs ">
+        <h1 className="w-11/12">O que é a SISMS?</h1>
+        <div className="">
+          <img className="" src="./plus.svg" alt=""/> 
+        </div>
+      </a>
+      <a href="#" className="bg-white rounded-3xl p-2 sm:w-8/12 w-full flex flex-row justify-center shadow-xs ">
+        <h1 className="w-11/12">O que é a SISMS?</h1>
+        <div className="">
+          <img className="" src="./plus.svg" alt=""/> 
+        </div>
+      </a>
+
     </div>
   )
 }
@@ -180,6 +209,7 @@ export default function Home() {
       <LandigPage/>
       <About/>
       <Contact/>
+      <Faqs/>
       <Footer/>
      
     </div>
