@@ -18,7 +18,9 @@ const SignUp = () => {
       </div>
       <div className="flex flex-col  items-center sm:w-1/2 w-full h-screen justify-center  ">
     
-        <form className="flex flex-col items-center  my-10 w-10/12">
+        <form className="flex flex-col items-center  my-10 w-10/12 overflow-auto">
+        <h1 className="text-green font-bold text-2xl">Criar conta</h1>
+          <span className="text-green2 my-4">Insira seus dados para criar uma conta.</span>
           <Input name={"Nome"}/>
           <Input name={"E-mail"}/>
           <Input name={"Endereço"}/>
@@ -27,8 +29,7 @@ const SignUp = () => {
           <Input name={"Telefone"}/>
           <button className="bg-green w-4/12 text-white rounded-3xl h-10 mt-6 ">Cadastrar</button>
           <div className="flex flex-col mt-8">
-            <Link className="text-green" href="">Esqueceu a senha?</Link>
-            <Link className="text-green" href="">Crie sua conta</Link>
+         
           </div>
           </form>
         </div>
